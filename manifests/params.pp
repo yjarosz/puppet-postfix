@@ -44,6 +44,8 @@ class postfix::params {
   case $::osfamily {
     'Debian': {
     }
+    'RedHat': {
+    }
     default: {
       fail("${::operatingsystem} not supported.")
     }
